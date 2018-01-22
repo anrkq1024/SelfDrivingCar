@@ -1,0 +1,23 @@
+import time
+import webbrowser
+breaks=3
+break_count=0
+print("This program started on "+time.ctime())
+while(break_count < breaks):
+time.sleep(10)#time delay
+webbrowser.open("website address")
+break_count += 1
+##change file name##
+import os
+
+def rename_files():
+file_lists = os.listdir(r"D:\prog\py")
+saved_path = os.getcwd()
+os.chdir(r"D:\prog\py")
+for file_name in file_lists:
+    print("old name:" +file_name)
+    print("new name:" +file_name.translate(none,"1234567890") #delete numbers from file name
+    os.rename(file_name,file_name.translate(none,"1234567890"))
+os.chdir(saved_path)
+
+rename_files()
