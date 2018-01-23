@@ -21,3 +21,22 @@ for file_name in file_lists:
 os.chdir(saved_path)
 
 rename_files()
+
+#turtle draws square
+import turtle
+def draw_square():
+window = turtle.Screen()
+window.bgcolor("green")
+
+pet=turtle.Turtle()
+pet.speed(3)
+pet.color("red")
+pet.forward(100)
+pet.right(90)
+pet.forward(100)
+pet.right(90)
+pet.forward(100)
+pet.right(90)
+pet.forward(100)
+
+
