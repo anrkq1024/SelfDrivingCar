@@ -39,4 +39,16 @@ pet.forward(100)
 pet.right(90)
 pet.forward(100)
 
+----function----
+def sum_multi(choice, *args): 
+     if choice == "sum": 
+         result = 0 
+         for i in args: 
+             result = result + i 
+     elif choice == "mul": 
+         result = 1 
+         for i in args: 
+             result = result * i 
+     return result 
+
 
